@@ -14,7 +14,7 @@ def removeDeadColumns (df):
   print(f"Removed dead sensors: {droppedColumns}")
   return df
 
-def graphPlot(df)
+def graphPlot(df):
   if "RPM" in df.columns:
     fig_rpm= px.line(df, y="RPM", title="RPM Over Time")
     fig_rpm.show()
