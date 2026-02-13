@@ -28,7 +28,7 @@ def main():
     print("Invalid")
     return
 
-  file_path= sys.argv[1]
+file_path= sys.argv[1]
 
 df= pd.read_csv(file_path)
 
