@@ -6,7 +6,7 @@ def removeDeadColumns (df):
   droppedColumns= []
 
   for col in df.columns:
-    if "Analog Input" in col and df[col].nuniuque()==1:
+    if "Analog Input" in col and df[col].nunique()==1:
       droppedColumns.append(col)
 
   df= df.drop(columns=droppedColumns)
